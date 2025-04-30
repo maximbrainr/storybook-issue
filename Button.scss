@@ -1,0 +1,106 @@
+
+.brn--button-icon {
+  i[class*="sap-icon"] {
+    margin: 0;
+  }
+}
+
+.brn--button-icon-badge {
+  position: absolute;
+  left: 95%;
+  top: 6%;
+}
+.fd-button--standard {
+  padding: 0 8px;
+}
+.brn-- {
+  &button {
+
+    &-default:hover {
+      background-color: $color-information;
+      color: $color-primary-3;
+      border: 1px solid;
+
+      &[disabled] {
+        &:hover {
+          background-color: $color-primary-3;
+          color: $color-information;
+          border: 1px solid $color-information;
+        }
+      }
+    }
+
+    &-toolbar-clear-filters {
+      border: unset;
+
+      &:focus, &:hover {
+        background-color: $color-primary-4;
+
+        > span {
+          color: $color-primary-2-darken
+        }
+      }
+    }
+
+    &-no-border {
+      border: 0 !important;
+    }
+  }
+
+  &button-grey-compact {
+    color: $color-neutral;
+    border-color: $color-neutral;
+
+    &[disabled] {
+      border-color: $color-neutral;
+      color: $color-neutral;
+
+      &:hover {
+        background-color: $color-primary-3;
+        color: $color-neutral;
+      }
+    }
+
+    &:hover, &:active {
+      background-color: $color-neutral;
+      border-color: $color-neutral;
+      color: $color-primary-3;
+    }
+
+    &-popup {
+      color: $color-neutral;
+      border-color: $color-neutral;
+
+      &[disabled] {
+        border-color: $color-neutral;
+        color: $color-neutral;
+
+        &:hover {
+          background-color: $color-primary-3;
+          color: $color-neutral;
+        }
+      }
+
+      &:hover {
+        background-color: $color-neutral;
+        border-color: $color-neutral;
+        color: $color-primary-3;
+
+        > span {
+          > i {
+            color: $color-primary-3;
+          }
+
+          > div > i {
+            color: $color-primary-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fd-button.is-selected.brn--button-grey-compact {
+  background-color: $color-neutral;
+  border-color: $color-neutral;
+}
